@@ -1,11 +1,12 @@
 
 
-const my_project = () => {
-    return (
-        <div>
-          My project  
-        </div>
-    );
+const My_Project = () => {
+  return (
+    <div className="border mt-24">
+      <h2 className="text-4xl text-center"> My Project</h2>
+
+    </div>
+  );
 };
 
-export default my_project;
+export default My_Project;

@@ -2,8 +2,9 @@
 
 const Skills = () => {
     return (
-        <div>
-            My Skills
+        <div className="border mt-24">
+            <h2 className="text-4xl text-center"> Skills</h2>
+
         </div>
     );
 };

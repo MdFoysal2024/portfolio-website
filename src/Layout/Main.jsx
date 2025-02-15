@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const Main = () => {
     return (
-        <div className="bg-[#f8d9fd] h-[100vh]">
+        <div className="bg-[#d0f0fd] h-[100vh]">
             <Navbar></Navbar>
             <div className="container mx-auto">
 

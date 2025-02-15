@@ -1,11 +1,9 @@
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { FiHeart } from "react-icons/fi";
-import { NavLink } from 'react-router-dom';
-
+import iconImg from '../assets/image.png'
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <header className='bg-[#deaaff]   p-6 '>
+        <header className='bg-[#92dffd]  py-2  '>
             <div className="navbar container  mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -27,79 +25,100 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  w-52 p-2 shadow">
                             <NavLink
-                            className={({ isActive }) =>
-                                ` ${isActive ? 'underline  font-bold' : 'hover:text-warning'}`}
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline  font-bold' : 'hover:font-bold'}`}
 
-                            to="/">Home
-                        </NavLink>
-                        <NavLink
-                            className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                to="/">Home
+                            </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/statistics">Statistics
-                        </NavLink>
-                        <NavLink
-                            className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                to="/statistics">About Me
+                            </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/dashboard">Dashboard
-                        </NavLink>
-                        <NavLink
-                            className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                to="/Skills">Skills
+                            </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/contactUs">Contact Us
-                        </NavLink>
+                                to="/dashboard">Education
+                            </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
+
+                                to="/p">My Project
+                            </NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
+
+                                to="/contactUs">Contact Me
+                            </NavLink>
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-black text-2xl font-bold">Gadget Heaven</a>
+                    <Link to='/'>
+                        <button className="flex cursor-pointer  items-center gap-2 lg: text-3xl  text-black font-bold">
+                            <img className='w-12' src={iconImg} alt="" />
+                            <span>MD FOYSAL</span></button>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal text-lg text-black px-1 gap-8">
                         <NavLink
                             className={({ isActive }) =>
-                                ` ${isActive ? 'underline  font-bold' : 'hover:text-warning'}`}
+                                ` ${isActive ? 'underline  font-bold' : 'hover:font-bold'}`}
 
                             to="/">Home
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/statistics">Statistics
+                            to="/statistics">About Me
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/dashboard">Dashboard
+                            to="/Skills">Skills
                         </NavLink>
                         <NavLink
                             className={({ isActive }) =>
-                                ` ${isActive ? 'underline font-bold' : 'hover:text-warning'}`}
+                                ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
 
-                            to="/contactUs">Contact Us
+                            to="/dashboard">Education
+                        </NavLink>
+                        <NavLink
+                            className={({ isActive }) =>
+                                ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
+
+                            to="/p">My Project
+                        </NavLink>
+                        <NavLink
+                            className={({ isActive }) =>
+                                ` ${isActive ? 'underline font-bold' : 'hover:font-bold'}`}
+
+                            to="/contactUs">Contact Me
                         </NavLink>
 
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-4 text-xl">
-                    <button className="btn text-xl  border-2 border-gray-300 rounded-full"><MdOutlineShoppingCart /></button>
-                    <button className="btn  text-xl border-2 border-gray-300 rounded-full"><FiHeart /></button>
+                    <Link to='/resume'>
+                        <button className="btn text-xl  border-2 border-gray-300 rounded-full">Resume</button>
+                    </Link>
+
                 </div>
             </div>
 
-            {/* <div className='text-center text-white py-12 space-y-6'>
-                <h2 className='text-5xl font-bold'>Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories</h2>
-                <p>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
-                <button className='btn btn-primary'>Shop Now</button>
-            </div>
 
-
-            <div className='    '>
-                <Banner></Banner>
-            </div> */}
 
         </header>
     );
