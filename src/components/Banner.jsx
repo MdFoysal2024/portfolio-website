@@ -12,7 +12,7 @@ const Banner = () => {
           <h3 className=" text-lg lg:text-3xl text-gray-600 font-medium"> Hello, I am</h3>
           <h1 className=" text-3xl lg:text-7xl font-bold py-4"> MD Foysal </h1>
           <h3 className=" text-xl lg:text-3xl text-gray-600 font-medium"> Frontend Developer</h3>
-          <p className="py-6 text-lg text-justify text-gray-300">
+          <p className="py-6 text-lg text-justify text-gray-400">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
             quasi. In deleniti eaque aut repudiandae et a id nisi.Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
             quasi. In deleniti eaque aut repudiandaecupiditate voluptatem et a id nisi.
@@ -31,6 +31,11 @@ const Banner = () => {
         <div className='lg:w-1/2 flex justify-end'>
           <img className='w-[640px]' width={''} src={portfolioImg} alt="" />
         </div>
+
+
+
+
+
 
       </div>
 

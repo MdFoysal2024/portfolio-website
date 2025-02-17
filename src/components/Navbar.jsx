@@ -38,24 +38,30 @@ const Navbar = () => {
 
                             to="/Skills"><a href="#skills">Skills</a>
                         </button>
-                        <NavLink
+                        <button
                             className={({ isActive }) =>
                                 ` ${isActive ? 'underline font-bold text-red-600' : 'hover:font-bold'}`}
 
-                            to="/dashboard">Education
-                        </NavLink>
-                        <NavLink
+                            to="/dashboard"> <a href="#education">Education</a>
+                        </button>
+                        <button
                             className={({ isActive }) =>
                                 ` ${isActive ? 'underline font-bold text-red-600' : 'hover:font-bold'}`}
 
-                            to="/p">My Project
-                        </NavLink>
-                        <NavLink
+                            ><a href="#course">Course</a>
+                        </button>
+                        <button
                             className={({ isActive }) =>
                                 ` ${isActive ? 'underline font-bold text-red-600' : 'hover:font-bold'}`}
 
-                            to="/contactUs">Contact Me
-                        </NavLink>
+                            to="/p"> Project
+                        </button>
+                        <button
+                            className={({ isActive }) =>
+                                ` ${isActive ? 'underline font-bold text-red-600' : 'hover:font-bold'}`}
+
+                            to="/contactUs"> <a href="#contact">Contact</a>
+                        </button>
 
                     </ul>
                 </div>

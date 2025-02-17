@@ -10,9 +10,9 @@ import firebaseImg from '../assets/firebase.png'
 const Skills = () => {
     return (
         <div id='skills' className="  mt-24 pt-24">
-            <h2 className="text-4xl text-center font-bold py-12"> Skills</h2>
+            <h2 className="text-4xl text-center font-bold py-8"> Skills</h2>
 
-            <div className="grid gap-6 p-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+            <div className="grid gap-6 pt-6 grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
 
                 <div className=" bg-gray-800 rounded-2xl p-4 flex flex-col items-center">
                     <img className='' src={htmlImg} alt="" />
