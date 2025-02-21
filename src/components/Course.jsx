@@ -5,7 +5,7 @@ const Course = () => {
 
         <div id="course" className=" mt-24 pt-24">
             <h2 className="text-4xl text-center py-8 font-bold"> Course</h2>
-            <div className=" grid gap-12 pt-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className=" grid gap-12 pt-6 grid-cols-1 ">
                 <div className="bg-gray-800 p-12 rounded">
                     <h2 className="text-2xl text-gray-300 font-bold"> Computer Office Application</h2>
                     <p className="text-lg text-gray-500">National Skill Standard Basic Course </p>

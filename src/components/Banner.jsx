@@ -4,13 +4,13 @@ import { ImLinkedin } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
-    <div className=' px-12 lg:px-0 pt-36'>
+    <div className=' px-12 lg:px-0 pt-24'>
 
       <div className=" flex flex-col items-center gap-12 justify-between lg:flex-row">
 
         <div className='lg:w-1/2'>
           <h3 className=" text-lg lg:text-3xl text-gray-600 font-medium"> Hello, I am</h3>
-          <h1 className=" text-3xl lg:text-7xl font-bold py-4"> MD Foysal </h1>
+          <h1 className=" text-3xl lg:text-7xl font-bold  text-red-600 py-4"> MD Foysal </h1>
           <h3 className=" text-xl lg:text-3xl text-gray-600 font-medium"> Frontend Developer</h3>
           <p className="py-6 text-lg text-justify text-gray-400">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
@@ -24,8 +24,14 @@ const Banner = () => {
           </div>
 
           <Link to='/resume'>
-            <button className="btn mt-4 bg-[#ffffff] py-4 px-10 text-lg">My Resume</button>
+            <button className=" rounded-lg mt-4 font-bold border-2 cursor-pointer border-red-600 bg-red-600 text-white py-2 px-10 text-lg">My Resume</button>
           </Link>
+
+          <Link to='/resume'>
+            <button className=" text-xl  border-2 cursor-pointer border-red-600 text-white font-bold ml-6 px-10 py-2 rounded-lg">Resume</button>
+          </Link>
+
+
         </div>
 
         <div className='lg:w-1/2 flex justify-end'>

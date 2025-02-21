@@ -16,20 +16,20 @@ const Contact = () => {
                         <form className="card-body">
                             <div className="form-control">
 
-                                <input type="email" placeholder="Your Name" className="input input-bordered bg-none rounded-lg border-blue-500 bg-gray-800 w-full" required />
+                                <input type="email" placeholder="Your Name" className="input input-bordered bg-none rounded-lg border-[#05425d] py-6 bg-gray-800 w-full" required />
                             </div>
                             <div className="form-control">
 
-                                <input type="password" placeholder="Your Email" className="input input-bordered rounded-lg border-blue-500 bg-gray-800 w-full" required />
+                                <input type="password" placeholder="Your Email" className="input input-bordered py-6 rounded-lg border-[#05425d] bg-gray-800 w-full" required />
 
                             </div>
                             <div className="form-control">
 
-                                <textarea className="rounded-lg p-3 border-blue-500 w-full" cols={50} rows={10} placeholder="Write Here"></textarea>
+                                <textarea className="rounded-lg p-3 border-[#05425d] w-full" cols={50} rows={10} placeholder="Write Here"></textarea>
 
                             </div>
                             <div className="form-control mt-6">
-                                <button className="cursor-pointer text-lg px-8 py-3 font-medium border-0 rounded-lg bg-blue-500">Send Message</button>
+                                <button className="cursor-pointer text-lg px-8 py-3 font-medium border-0 rounded-lg bg-[#05425d]">Send Message</button>
                             </div>
                         </form>
                     </div>

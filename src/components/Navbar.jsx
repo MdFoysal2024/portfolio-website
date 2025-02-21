@@ -12,7 +12,7 @@ const Navbar = () => {
                     <Link to='/'>
                         <button className="flex   cursor-pointer  items-center gap-2 lg: text-2xl  text-black font-bold">
                             <img className='w-10' src={iconImg} alt="" />
-                            <span className='lg:flex hidden  text-white'>MD FOYSAL</span></button>
+                            <span className='lg:flex hidden  text-gray-500'>MD FOYSAL</span></button>
                     </Link>
                 </div>
 
@@ -181,7 +181,7 @@ const Navbar = () => {
 
                 <div className="navbar-end lg:flex hidden gap-4 text-xl">
                     <Link to='/resume'>
-                        <button className="btn text-xl  border-2 border-gray-300 rounded-full">Resume</button>
+                        <button className=" text-xl  border-2 cursor-pointer border-red-600 text-white font-bold px-6 py-1 rounded-lg">Resume</button>
                     </Link>
 
                 </div>
